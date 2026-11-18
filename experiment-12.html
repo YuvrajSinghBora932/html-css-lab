@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model and Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      width: 250px;
+      padding: 20px;
+      border: 3px solid darkblue;
+      margin: 20px;
+      background-color: white;
+    }
+
+    .container {
+      height: 150px;
+      overflow: auto;
+      background-color: lightblue;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Box Model, Cards and Scrolling</h1>
+
+  <div class="card">
+    <h2>My Card</h2>
+    <p>This card demonstrates padding, border and margin.</p>
+  </div>
+
+  <h2>Scrolling Box</h2>
+  <div class="container">
+    <p>This is a scrolling box.</p>
+    <p>CSS controls the overflow of content.</p>
+    <p>More content is added to demonstrate scrolling.</p>
+    <p>Scroll down to see this line.</p>
+    <p>This is the last line of the box.</p>
+  </div>
+</body>
+</html>
