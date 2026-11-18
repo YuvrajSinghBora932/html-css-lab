@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Units and CSS Variables</title>
+  <style>
+    :root {
+      --main-color: darkblue;
+      --box-color: lightblue;
+      --spacing: 20px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: var(--spacing);
+    }
+
+    h1 {
+      color: var(--main-color);
+      font-size: 2rem;
+    }
+
+    .box {
+      background-color: var(--box-color);
+      padding: var(--spacing);
+      width: 50%;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Units and CSS Variables</h1>
+  <div class="box">
+    This box uses CSS variables, percentages, rem and em units.
+  </div>
+</body>
+</html>
