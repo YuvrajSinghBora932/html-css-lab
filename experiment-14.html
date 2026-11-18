@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><title>CSS Grid</title>
+<style>
+ .grid { display: grid; grid-template-columns: repeat(3, 1fr);
+ gap: 12px; }
+ .cell { padding: 24px; background: #e5f0df; border: 1px solid #8ca77e;
+ text-align: center; }
+ .wide { grid-column: span 2; }
+</style>
+</head>
+<body>
+ <h1>Grid Layout</h1>
+ <div class="grid">
+ <div class="cell wide">Item 1 (two columns)</div>
+ <div class="cell">Item 2</div>
+ <div class="cell">Item 3</div>
+ <div class="cell">Item 4</div>
+ <div class="cell">Item 5</div>
+ </div>
+</body>
+</html>
