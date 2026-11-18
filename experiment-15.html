@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+ * { box-sizing: border-box; }
+ body { margin: 0; font-family: Arial, sans-serif; }
+ header { padding: 18px; background: #214e75; color: white; }
+ .layout { display: flex; gap: 16px; padding: 16px; }
+ .main, .side { padding: 18px; background: #eef3f7; }
+ .main { flex: 3; } .side { flex: 1; }
+ @media (max-width: 600px) {
+ .layout { flex-direction: column; }
+ header { text-align: center; }
+ }
+</style>
+</head>
+<body>
+ <header><h1>Responsive Web Page</h1></header>
+ <div class="layout">
+ <main class="main"><h2>Main Content</h2><p>Flexible page content.</p></main>
+ <aside class="side"><h2>Sidebar</h2><p>Additional information.</p></aside>
+ </div>
+</body>
+</html>
